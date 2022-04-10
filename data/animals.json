@@ -108,6 +108,16 @@
         "hungry"
       ],
       "id": "10"
+    },
+    {
+      "name": "Zeus",
+      "species": "God",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "hungry",
+        "zany"
+      ],
+      "id": "11"
     }
   ]
 }

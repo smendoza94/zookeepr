@@ -4,7 +4,7 @@
   "description": "Local zoo (fictional) new online catalog allowing animal enthusiasts to access the data from different locations and browsers without needing to download it to their device.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node server.js"
   },
   "repository": {
@@ -19,6 +19,10 @@
   },
   "homepage": "https://github.com/smendoza94/zookeepr#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "jest": "^27.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }

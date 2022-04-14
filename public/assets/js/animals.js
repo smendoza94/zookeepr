@@ -1,5 +1,3 @@
-const res = require("express/lib/response");
-
 const $animalForm = document.querySelector('#animals-form');
 const $displayArea = document.querySelector('#display-area');
 

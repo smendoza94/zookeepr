@@ -1,9 +1,12 @@
 const router = require('express').Router();
+const {
+  filterByQuery,
+  findById,
+  createNewZookeeper,
+  validateZookeeper
+} = require('../../lib/zookeepers');
+const { zookeepers } = require('../../data/zookeepers');
 
-const { filterByQuery, findById, createNewZookeeper, validateZookeeper } = require('../../lib/zookeepers.js') 
-const { zookeepers } = require('../../data/zookeepers.json');
-
-// GET Routes for API
 router.get('/zookeepers', (req, res) => {
   let results = zookeepers;
   if (req.query) {
@@ -21,11 +24,11 @@ router.get('/zookeepers/:id', (req, res) => {
   }
 });
 
-// POST Routes
 router.post('/zookeepers', (req, res) => {
   req.body.id = zookeepers.length.toString();
+
   if (!validateZookeeper(req.body)) {
-    res.status(404).send('The zookeeper is not properly formatted.');
+    res.status(400).send('The zookeeper is not properly formatted.');
   } else {
     const zookeeper = createNewZookeeper(req.body, zookeepers);
     res.json(zookeeper);

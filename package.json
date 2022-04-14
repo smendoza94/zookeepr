@@ -1,28 +1,19 @@
 {
-  "name": "zookeepr",
+  "name": "main",
   "version": "1.0.0",
-  "description": "Local zoo (fictional) new online catalog allowing animal enthusiasts to access the data from different locations and browsers without needing to download it to their device.",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "jest",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/smendoza94/zookeepr.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/smendoza94/zookeepr/issues"
-  },
-  "homepage": "https://github.com/smendoza94/zookeepr#readme",
   "dependencies": {
-    "express": "^4.17.3",
-    "jest": "^27.5.1"
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "jest": "^27.5.1"
   }
 }
